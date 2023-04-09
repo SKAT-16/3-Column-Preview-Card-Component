@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body {
+}
+
+.parent {
+    display: flex;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.parent div {
+    font-family: Lexend Deca;
+    padding: 60px 30px;
+}
+
+.first-column {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.second-column {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third-column {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.main-title {
+    color: hsl(0, 0%, 95%);
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.description {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca;
+    line-height: 2;
+}
+
+.learn-more-button {
+    font-family: Lexend Deca;
+    
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    border: white;
+    padding: 15px 40px;
+}
+
+.first-column .learn-more-button {
+    color: hsl(31, 77%, 52%);
+}
+
+.second-column .learn-more-button {
+    color: hsl(184, 100%, 22%);
+}
+
+.third-column  .learn-more-button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width:700px) {
+    .parent {
+        flex-direction: column;
+        margin: 10px;
+        max-width: 300px;
+    }
+
+    .parent div {
+        font-family: Lexend Deca;
+        padding: 40px 30px;
+    }
+    
+    .first-column {
+        border-radius: 10px 10px 0 0;    
+    }
+    .third-column {
+        border-radius: 0 0 10px 10px;
+    }    
+}
